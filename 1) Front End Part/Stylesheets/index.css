@@ -1,0 +1,106 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+/*common to all sections*/
+
+/*To all display 3 classes*/
+.display-3
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.display-4
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/*About US Section */
+
+.background-aboutus
+{
+    background: -webkit-linear-gradient(top, #00c6ff, #0072ff);
+  
+}
+.aakash-image img
+{
+    /*width: 100%;
+    height: auto;*/
+
+    width: 200px;
+    height:  200px;
+    border-color: white;
+    border-radius: 50%;
+    border: 10px solid white;
+    
+
+}
+
+.container-contentaboutus
+{
+    background-color: aliceblue;
+    margin: 2% 5% 2% 5%;
+    padding: 2% 1% 2% 1%;
+}
+
+
+
+/*-------------------footer------------------------------------*/
+
+/*social media stuff on footer*/
+
+#github
+{
+    color:  #000000;
+    padding: 5% 0% 5% 0%;
+}
+#github:hover
+{
+    color:  #504f4f;
+    transform: scale(1.1);
+    
+}
+#twitter
+{
+  color:#1dcaff;
+  padding: 5% 0% 5% 0%;
+ 
+}
+#twitter:hover
+{
+  color:#0490bb;
+  transform: scale(1.1);
+}
+#instagram
+{
+  color:#dd2a7b ;
+  padding: 5% 0% 5% 0%;
+ 
+}
+#instagram:hover
+{
+  color:#8134af;
+  transform: scale(1.1);
+}
+
+#linkedin
+{
+  color:#0077b5;
+  padding: 5% 0% 5% 0%;
+  
+}
+#linkedin:hover
+{
+  color:#035581;
+  transform: scale(1.1);
+}
+
+/*footer horizontal line padding and colors*/
+#horizontal-line hr
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(161, 156, 156);
+}
