@@ -4,6 +4,7 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+
 /*common to all sections*/
 
 /*To all display 3 classes*/
@@ -102,7 +103,11 @@
 
 /*--------------------------Navigation bar------end-------------------------------------------------*/
 /*Login System */
-
+form
+{
+  margin-left: 30%;
+  margin-right: 30%;
+}
 /*-----------------------*/
 
 
