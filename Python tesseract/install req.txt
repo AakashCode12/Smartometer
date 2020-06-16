@@ -1,0 +1,6 @@
+install pytesseract 
+
+install PILLOW
+
+using pip install pytesseract
+	pip install PILLOW

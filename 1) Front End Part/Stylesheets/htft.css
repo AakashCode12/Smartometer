@@ -1,0 +1,141 @@
+*
+{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*common to all sections*/
+
+/*To all display 3 classes*/
+.display-3
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.display-4
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.btn 
+{
+  background-color: rgb(255, 7, 123);
+}
+.btn:hover
+{
+    background-color: transparent;
+    color:black;
+}
+/*------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*  navigation bar start*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index:10;
+}
+.navbar-nav li{
+    padding:0 10px;
+}
+.navbar-nav li a{
+    text-align:left;
+    color: black;
+}
+#nav-bar ul li a:hover{
+    color :#c21111!important;
+    right:0px;
+}
+.navbar{
+    background: -webkit-linear-gradient(right, #9e9e9e, #e9e9e9);
+}
+.navbar-toggler{
+	background-color: #dc3545;
+    border:none!important;
+}
+.button:active,
+ button:active,
+.button:focus,
+ button:focus,
+.button:hover,
+ button:hover{
+    border:none !important;
+    outline:none !important; /*Code here is to remove black border around archives button on click*/
+}
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.nav-link{
+    color: black!important;
+    font-weight:600;
+    font-size: 16px;
+}
+
+
+
+
+/*navbar end*/
+
+/*--------------------------Navigation bar------end-------------------------------------------------*/
+
+
+/*-------------------footer------------------------------------*/
+
+/*social media stuff on footer*/
+
+#github
+{
+    color:  #000000;
+    padding: 5% 0% 5% 0%;
+}
+#github:hover
+{
+    color:  #504f4f;
+    transform: scale(1.1);
+    
+}
+#twitter
+{
+  color:#1dcaff;
+  padding: 5% 0% 5% 0%;
+ 
+}
+#twitter:hover
+{
+  color:#0490bb;
+  transform: scale(1.1);
+}
+#instagram
+{
+  color:#dd2a7b ;
+  padding: 5% 0% 5% 0%;
+ 
+}
+#instagram:hover
+{
+  color:#8134af;
+  transform: scale(1.1);
+}
+
+#linkedin
+{
+  color:#0077b5;
+  padding: 5% 0% 5% 0%;
+  
+}
+#linkedin:hover
+{
+  color:#035581;
+  transform: scale(1.1);
+}
+
+/*footer horizontal line padding and colors*/
+#horizontal-line hr
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(204, 204, 204);
+}
