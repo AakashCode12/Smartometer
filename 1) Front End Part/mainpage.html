@@ -6,7 +6,7 @@
 
 
     <!-------------title tag-start-->
-    <title>Smartometer | Home login page</title>
+    <title>Smartometer |Main Page</title>
     <!-------------Logo shortcut icon -->
     <link rel="shortcut icon" href="img/Logo-Smartometer-square.png">    
     <!-- Bootstrap--CSS only -->
@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-----------css file links-->
-    <link rel="stylesheet" href="Stylesheets/index.css">
+    <link rel="stylesheet" href="Stylesheets/mainpage.css">
 
 </head>
-<body >
+<body>
  <!--------------------------------------------------------------------------------------------------->
                                     <!--Navigation Bar-->
 
@@ -45,67 +45,14 @@
           </nav>
     </section>
 <!--------------------------------------------------------------------------------------------------->
-<!------Login---->
-
-<div class="container box" id="login_div"> 
-<div id="boxform">
-    <h3 class="display-3 text-center" >Login</h3>
-    <br><br>
-    <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="email_field" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="password_field" placeholder="Password">
-    </div >
-    
-    <a  href="#" onclick="login()" class="btn btn-danger ">Login</a>
-  </form>
-  
-  </div>
-</div>
-  <!------Login- end--->
-
-
-
-
-
-  <div id="user_div">
-    <h3 class="display-3 text-center">Welcome User</h3>   
+<br><br><br><br>
+   <br>
+   <h4 class="display-4 text-center">Welcome User</h4>   
    <div class="container text-center">
-   <a href="#"  class="btn btn-danger">logout</a>
-   </div>
-
-  </div>
-
-                                        <!----About Project-->
-
-<h3 class="display-3 text-center" >About the Project</h3>
-
-
-<div class="background-aboutus" >
-    <br>
-    <div class="container-contentaboutus">  
-
+   <button class="btn btn-danger">logout</button>
+    </div>
    
-            <div class="row">
-                <div class="col-sm-3 text-center aakash-image" >
-                    <img src="img/Aakash.png"  alt="">
-                </div>
-            
-                <div class=" col-sm-9 ">
-                    <p class="text-justify">Hello my name is Aakash.I live in <a href="https://goo.gl/maps/AhZ83x2mHbUuwv4s5" target="_blank">Kharghar,Navi Mumbai</a>. In my locality I always see that for checking any meter, be it Water meter or Electricity meter, Government here sends a guy to click a photo of the meter and then the bill comes to us by a guy.
-                          <br><br>
-                         So Basically,I am making a Web Application to remove the use of human-effort and let machine grasp the reading and send it to the website. After recieving the reading, we can display the calculated bill amount.</p>
-                 </div><!--content about us end div tag----->
-            </div><!----row end-->
-
-    </div>   
-    <br>
-</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <!------------------------------------------------------------------------------------------------------->
                                             <!--footer-->
 <div class="footer ">
@@ -144,27 +91,10 @@
     <!-- Copyright -->
   
 </div><!--footer end-->
-
-
-
 <!-- JS, Popper.js, and jQuery -->
 <!-----------------firebase-->
- <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="/__/firebase/7.15.1/firebase-app.js"></script>
-
-  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="/__/firebase/7.15.1/firebase-analytics.js"></script>
-
-  <!-- Add Firebase products that you want to use -->
-  <script src="/__/firebase/7.15.1/firebase-auth.js"></script>
-  <script src="/__/firebase/7.15.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script> 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
-
-<script src="scripts/index.js">
+<script src="scripts/mainpage.js">
 
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

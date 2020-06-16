@@ -80,47 +80,6 @@
 /*navbar end*/
 
 /*--------------------------Navigation bar------end-------------------------------------------------*/
-/*Login System */
-form
-{
-  margin-left: 30%;
-  margin-right: 30%;
-}
-/*-----------------------*/
-
-
-/*About US Section */
-
-.background-aboutus
-{
-    background: -webkit-linear-gradient(top, #00c6ff, #0072ff);
-  
-}
-.aakash-image img
-{
-    /*width: 100%;
-    height: auto;*/
-
-    width: 200px;
-    height:  200px;
-    border-color: white;
-    border-radius: 50%;
-    border: 10px solid white;
-    
-
-}
-.col-sm-9 p
-{
-    margin: 1% 1% 1% 1%;
-    font-size: larger;
-}
-.container-contentaboutus
-{
-    background-color: aliceblue;
-    margin: 2% 5% 2% 5%;
-    padding: 2% 1% 2% 1%;
-}
-
 
 
 /*-------------------footer------------------------------------*/
