@@ -1,0 +1,149 @@
+/*-----------------------------------
+   ? FROM HERE ALL THE COMMON CHANGES
+------------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Raleway',sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    color:black;
+    background-color: rgb(202, 255, 237);
+    font-weight: 600;
+}
+a{
+    color: black!important;
+    
+}
+a:hover{
+    color: rgb(117, 1, 1) !important;
+     font-family: 'Raleway',
+     sans-serif;
+}
+h4{
+    padding: 2% 0% 2% 0%;
+}
+/*-----------------------------------
+    ?TILL HERE ALL THE COMMON CHANGES 
+-------------------------------------*/
+
+/*
+! Navbar contents from here
+*/
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+.navbar-brand{
+      transition: 0.5s ease;
+}
+.navbar-brand:hover{
+    transform: scale(1.05);
+}
+.navbar-nav li a {
+    text-align: right;
+    color: black;
+}
+
+
+.navbar {
+    background: rgb(247, 247, 247);
+}
+
+.navbar-toggler {
+    background-color: #dc3545;
+    border: none !important;
+}
+
+.button:active,
+button:active,
+.button:focus,
+button:focus,
+.button:hover,
+button:hover {
+    border: none !important;
+    outline: none !important;
+    
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.dropdown-menu a:hover{    
+    background-color:rgb(206, 253, 234);
+    color:#c21111 !important;
+}
+/**----------THE UNDERLINE EFFECT OF LINKS--------------------*/
+a.left {
+    position: relative;
+}
+
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(150, 245, 205);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/*
+ ! Navbar contents end from here
+*/
+/*
+    *foooter start
+*/
+/*social media stuff on footer*/
+#github {
+    color: #000000;
+    padding: 5% 0% 5% 0%;
+}
+#github:hover {
+    color: #504f4f;
+    transform: scale(1.1);
+}
+#twitter {
+    color: #1dcaff;
+    padding: 5% 0% 5% 0%;
+}
+#twitter:hover {
+    color: #0490bb;
+    transform: scale(1.1);
+}
+#instagram {
+    color: #dd2a7b;
+    padding: 5% 0% 5% 0%;
+}
+#instagram:hover {
+    color: #8134af;
+    transform: scale(1.1);
+}
+#linkedin {
+    color: #0077b5;
+    padding: 5% 0% 5% 0%;
+}
+#linkedin:hover {
+    color: #035581;
+    transform: scale(1.1);
+}
+/*footer horizontal line padding and colors*/
+#horizontal-line hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(204, 204, 204);
+}
+/*
+    *foooter end
+*/
