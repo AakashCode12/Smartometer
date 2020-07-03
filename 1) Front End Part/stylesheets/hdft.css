@@ -1,28 +1,40 @@
-/*-----------------------------------
-   ? FROM HERE ALL THE COMMON CHANGES
+/*   ? FROM HERE ALL THE COMMON CHANGES
 ------------------------------------*/
 *{
     margin:0;
     padding:0;
     font-family: 'Raleway',sans-serif;
-    scroll-behavior: smooth;
-  
+    scroll-behavior: smooth;  
 }
-
 *::selection {
     color:black;
     background-color: #caffed;
-    font-weight: 800;
-    
+    font-weight: 800;    
 }
 a{
-    color: black!important;
-    
+    color: black!important;    
 }
 a:hover{
     color: rgb(117, 1, 1) !important;
      font-family: 'Raleway',
      sans-serif;
+}
+svg {
+    align-items: baseline;
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+i:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+
+}
+
+svg:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
 }
 h4{
     padding: 2% 0% 2% 0%;
@@ -30,16 +42,23 @@ h4{
 h3{
     padding: 2% 0% 2% 0%;
 }
+h5{
+    padding: 0% 0% 2% 0%;
+}
 .fa-file-text {
     font-size:4px;
     color: #047a53;
 }
 .box-description{
     background-color: #e3f3ee;
-}/**color of steps to use*/
+}
+/**color of steps to use*/
 .box-steps-to-use{
     background-color: #f5f5f5;
     padding:1%;    
+}
+.boxprogramming {   
+    padding:2%;
 }
 p{
     padding:1%;
@@ -51,23 +70,35 @@ p{
 .card:hover{
     transform: scale(1.1);
 }
-/*-----------------------------------
-    ?TILL HERE ALL THE COMMON CHANGES 
--------------------------------------*/
 
-/*
-! Navbar contents from here
-*/
+/**button's work*/
+#submit-button{
+    border-radius: 50%;
+    color: white;
+    background-color: #fd3300;
+   
+}
+#submit-button:hover {
+    border-radius: 50%;
+    color: #fff;
+     background-color:#921d00;
+}
+
+/*todo TILL HERE ALL THE COMMON CHANGES -*/
+/*todo Navbar contents from here*/
 
 .navbar-nav li {
     padding: 0 10px;
 }
-.navbar-brand{
-      transition: 0.5s ease;
+
+.navbar-brand {
+    transition: 0.5s ease;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     transform: scale(1.05);
 }
+
 .navbar-nav li a {
     text-align: right;
     color: black;
@@ -85,31 +116,20 @@ p{
     border: none !important;
 }
 
-.button:active,
-button:active,
-.button:focus,
-button:focus,
-.button:hover,
-button:hover {
-    border: none !important;
-    outline: none !important;
-    
+
+
+.dropdown-menu a:hover {
+    background-color: rgb(206, 253, 234);
+    color: #c21111 !important;
 }
 
-.btn:focus,
-.btn:active {
-    outline: none !important;
-    box-shadow: none !important;
+.col-sm-2 svg{
+    align-items: center;col-sm-2
 }
-.dropdown-menu a:hover{    
-    background-color:rgb(206, 253, 234);
-    color:#c21111 !important;
-}
-/**----------THE UNDERLINE EFFECT OF LINKS--------------------*/
+/**----------THE UNDERLINE EFFECT OF LINKS--------------------*/   
 a.left {
     position: relative;
 }
-
 a.left:before {
     content: "";
     position: absolute;
