@@ -6,12 +6,14 @@
     padding:0;
     font-family: 'Raleway',sans-serif;
     scroll-behavior: smooth;
+  
 }
 
 *::selection {
     color:black;
-    background-color: rgb(202, 255, 237);
-    font-weight: 600;
+    background-color: #caffed;
+    font-weight: 800;
+    
 }
 a{
     color: black!important;
@@ -24,6 +26,30 @@ a:hover{
 }
 h4{
     padding: 2% 0% 2% 0%;
+}
+h3{
+    padding: 2% 0% 2% 0%;
+}
+.fa-file-text {
+    font-size:4px;
+    color: #047a53;
+}
+.box-description{
+    background-color: #e3f3ee;
+}/**color of steps to use*/
+.box-steps-to-use{
+    background-color: #f5f5f5;
+    padding:1%;    
+}
+p{
+    padding:1%;
+}
+.card{
+    margin:1%;
+    transition: .1s;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 /*-----------------------------------
     ?TILL HERE ALL THE COMMON CHANGES 
@@ -45,6 +71,8 @@ h4{
 .navbar-nav li a {
     text-align: right;
     color: black;
+    font-size: large;
+    font-weight: 500;
 }
 
 
@@ -86,19 +114,22 @@ a.left:before {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
     background-color: rgb(150, 245, 205);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
-
 a.left:hover:before {
     visibility: visible;
     width: 100%;
 }
-
+/* **for the link with highlight for he particular page*/
+a.highlight {
+    color: #c21111!important;
+   
+}
 /*
  ! Navbar contents end from here
 */

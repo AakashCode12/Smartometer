@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar & footer | Smartometer</title>
+    <title>OCR | Smartometer</title>
     <link rel="stylesheet" href="stylesheets/hdft.css">
+    <link rel="stylesheet" href="stylesheets/OCR.css">
     <link rel="shortcut icon" href="img/smartlogo.png">
-    <!--!css bootstrap-->
+    <!--!todo css bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!---google fonts-->
@@ -16,10 +17,10 @@
 </head>
 
 <body>
-    <!--*!navbar--->
+    <!--todo navbar--->
     <nav class="navbar navbar-expand-lg sticky-top navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="hdft.html">
                 <img src="img/smartlogo.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
                 Smartometer
             </a>
@@ -31,16 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="link-background">
-                        <a href="" class="nav-link left">Bill Generator</a>
+                        <a href="#" class="nav-link left">Bill Generator</a>
                     </li>
                     <li class="link-background">
-                        <a href="" class="nav-link left">OCR</a>
+                        <a href="#" class="nav-link highlight">OCR</a>
                     </li>
                     <li class="link-background">
-                        <a href="" class="nav-link left">Report generator</a>
+                        <a href="#" class="nav-link left">Report generator</a>
                     </li>
                     <li class="link-background">
-                        <a href="" class="nav-link ">Project Flow</a>
+                        <a href="#" class="nav-link left">Project Flow</a>
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle left" href="#" id="navbarDropdown" role="button"
@@ -57,17 +58,98 @@
             <!------>
         </div>
     </nav>
-    <br><br><br><br>
-    <!--!footer-->
+    <!--todo carousel start-->  
+    <div class="container-carousel-ocr" id="carousel-ocr">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 " src="img/OCR.jpg" alt="First slide">
+                </div>            
+            </div>
+        </div>
+    </div>    
+    <!--todo carousel end-->
+    <br><br><br><br><br><br><br>
+
+    <!--todo steps to use start-->
+    <div class="box-steps-to-use">
+        <h3 class="display-3 text-center">How to use OCR? <i class="fa fa-search"></i></h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Step 1:</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>                           
+                        </div>
+                     </div> 
+                </div> 
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Step 2:</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Step 3:</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br><br>
+    </div>   
+    <!--todo steps to use  end-->
+
+
+    <!--todo description start-->
+    <div class="box-description">
+        <h3 class="display-3 text-center">What is OCR? <i class="fa fa-file-text"></i></h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="container"> 
+                        <img src="img/Untitled-design.gif" width="100%" alt="">
+                    </div>
+                </div>
+                <div id="description-ocr-paragraph" class="col-md-8">
+                    <p class="text-justify">Optical character recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of
+                    typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a
+                    scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an
+                    image (for example: from a television broadcast).</p>                    
+                    <p class="text-justify">Here for this project, we have used tesseract which is <i style="color:blue" class="fa  fa-google"></i>oogle's open source engine 
+                    for optical character recognition (OCR). I have made the back-end using Node.js using the modules:<br>
+                </p>
+                <p>1) Express <br>
+                   2) Express <br>
+                   3) Express <br>
+
+                </p>
+                </div>
+            </div>            
+        </div>
+    </div>
+   
+
+    <!--todo description end-->    
+    <!--todo footer-->
     <div class="footer bg-light ">
         <!--social-media-->
         <div class="container ">
+            <br><br>
             <div class="row">
                 <div class="col-sm-5">
                     <h4 class="display-5 text-center">About</h4>
-                    <p class="text-justify"> Hello, I am Aakash Yadav this is the project which I made
+                    <p class="text-j*-+ustify"> Hello, I am Aakash Yadav this is the project which I made
                         during my B.E Computer Science (2019-23) degree for TECHNOVA project competition.
-                        I have many hopes with this project.</p>
+                        I have many hopes with this project.
+                    </p>
                 </div>
                 <div class="col-sm-7">
                     <h4 class="display-5 text-center">Follow Me</h4>
@@ -97,8 +179,8 @@
         </section>
         <div class="footer-copyright text-center py-3">© 2020 Copyright: <i>Aakash Yadav</i></div>
     </div>
-    <!--footer end-->
-    <!-- JS, Popper.js, and jQuery -->
+    <!--todo footer end-->
+    <!-- todo JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
