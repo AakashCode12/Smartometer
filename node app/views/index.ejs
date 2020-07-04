@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR | Optical Character Recognition | Smartometer</title>
+    <link rel="stylesheet" href="stylesheets/hdft.css">  
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dnv3ztqf1/image/upload/v1593862482/smartometer/smartlogo_npayja.png">
+    <!--!todo css bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--? google fonts & font awesome-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <style>
+        /*   ? FROM HERE ALL THE COMMON CHANGES
+    ------------------------------------*/
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    *::selection {
+        color: black;
+        background-color: #caffed;
+        font-weight: 800;
+    }
+
+    a {
+        color: black !important;
+    }
+
+    a:hover {
+        color: rgb(117, 1, 1) !important;
+        font-family: 'Raleway',
+            sans-serif;
+    }
+
+    svg {
+        align-items: baseline;
+        align-self: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    i:hover {
+        transform: scale(1.1);
+        opacity: 0.6;
+
+    }
+
+    svg:hover {
+        transform: scale(1.1);
+        opacity: 0.6;
+    }
+
+    h4 {
+        padding: 2% 0% 2% 0%;
+    }
+
+    h3 {
+        padding: 2% 0% 2% 0%;
+    }
+
+    h5 {
+        padding: 0% 0% 2% 0%;
+    }
+
+    .fa-file-text {
+        font-size: 4px;
+        color: #047a53;
+    }
+
+    .box-description {
+        background-color: #e3f3ee;
+    }
+
+    /**color of steps to use*/
+    .box-steps-to-use {
+        background-color: #f5f5f5;
+        padding: 1%;
+    }
+
+    .boxprogramming {
+        padding: 2%;
+    }
+
+    p {
+        padding: 1%;
+    }
+
+    .card {
+        margin: 1%;
+        transition: .1s;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+    /**button's work*/
+    #submit-button {
+        border-radius: 50%;
+        color: white;
+        background-color: #fd3300;
+
+    }
+
+    #submit-button:hover {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #921d00;
+    }
+
+    /*todo TILL HERE ALL THE COMMON CHANGES -*/
+    /*todo Navbar contents from here*/
+
+    .navbar-nav li {
+        padding: 0 10px;
+    }
+    .navbar-brand {
+        transition: 0.5s ease;
+    }
+    .navbar-brand:hover {
+        transform: scale(1.05);
+    }
+    .navbar-nav li a {
+        text-align: right;
+        color: black;
+        font-size: large;
+        font-weight: 500;
+    }
+    .navbar {
+        background: rgb(247, 247, 247);
+    }
+    .navbar-toggler {
+        background-color: #dc3545;
+        border: none !important;
+    }
+    .dropdown-menu a:hover {
+        background-color: rgb(206, 253, 234);
+        color: #c21111 !important;
+    }
+    .col-sm-2 svg {
+        align-items: center;
+        col-sm-2
+    }
+    /**----------THE UNDERLINE EFFECT OF LINKS--------------------*/
+    a.left {
+        position: relative;
+    }
+    a.left:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(150, 245, 205);
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    a.left:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+    /* **for the link with highlight for he particular page*/
+    a.highlight {
+        color: #c21111 !important;
+
+    }
+    /*
+     ! Navbar contents end from here
+    */
+    /*
+        *foooter start
+    */
+    /*social media stuff on footer*/
+    #github {
+        color: #000000;
+        padding: 5% 0% 5% 0%;
+    }
+    #github:hover {
+        color: #504f4f;
+        transform: scale(1.1);
+    }
+    #twitter {
+        color: #1dcaff;
+        padding: 5% 0% 5% 0%;
+    }
+    #twitter:hover {
+        color: #0490bb;
+        transform: scale(1.1);
+    }
+    #instagram {
+        color: #dd2a7b;
+        padding: 5% 0% 5% 0%;
+    }
+    #instagram:hover {
+        color: #8134af;
+        transform: scale(1.1);
+    }
+    #linkedin {
+        color: #0077b5;
+        padding: 5% 0% 5% 0%;
+    }
+    #linkedin:hover {
+        color: #035581;
+        transform: scale(1.1);
+    }
+    /*footer horizontal line padding and colors*/
+    #horizontal-line hr {
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: rgb(204, 204, 204);
+    }
+    /*
+        *foooter end
+    */
+    .box-description {
+        padding: 2%;
+    }
+    #description-ocr-paragraph p {
+        font-size: 17px;
+    }
+    </style>
+    <!--todo navbar--->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="hdft.html">
+                <img src="https://res.cloudinary.com/dnv3ztqf1/image/upload/v1593862482/smartometer/smartlogo_npayja.png" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+                Smartometer
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--contents---->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="link-background">
+                        <a href="#" class="nav-link left">Bill Generator</a>
+                    </li>
+                    <li class="link-background">
+                        <a href="#" class="nav-link highlight">OCR</a>
+                    </li>
+                    <li class="link-background">
+                        <a href="#" class="nav-link left">Report generator</a>
+                    </li>
+                    <li class="link-background">
+                        <a href="#" class="nav-link left">Project Flow</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle left" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                            <a class="dropdown-item" href="#">Sign In</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!------>
+        </div>
+    </nav>
+    <!--todo carousel start-->
+    <div class="container-carousel-ocr" id="carousel-ocr">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 " src="https://res.cloudinary.com/dnv3ztqf1/image/upload/q_39/v1593862484/smartometer/OCR_zjxowa.jpg" alt="First slide">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--todo carousel end-->
+
+    <h3 class="display-4 text-center">Image to Text converter</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 "></div>
+            <div class="col-md-6 text-center">
+                <form class=" text-center" action="/upload" method="POST" enctype="multipart/form-data">
+                    <input id="form-input-box" class="btn btn-light" type="file" name="avatar">
+                    <button id="submit-button" class="btn btn-danger" type="submit"> convert</button>
+                </form>
+                <br><br>
+                <a href="#scrollforstepstouse"><button class="text-center btn btn-primary">How to use?</button></a>
+            </div>
+            <div class="col-md-3 "></div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!--todo steps to use start-->
+    <div id="scrollforstepstouse" class="box-steps-to-use">
+        <h3 class="display-4 text-center">How to use OCR? <i class="fa fa-search"></i></h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Step 1</h5>
+                            <p class="card-text">Click on Choose file button in the website. <br> <br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Step 2</h5>
+                            <p class="card-text">After clicking on the Choose file button, choose the file from which
+                                you want to extract the text & click on the convert
+                                button.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Step 3</h5>
+                            <p class="card-text">Our inbuilt engine on the server side will process your image using
+                                tesseract engine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Step 4</h5>
+                            <p class="card-text">Wait for few Seconds and the pdf file will be downloaded to your device
+                                from which you can extract you text.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <!--todo steps to use  end-->
+    <!--todo programming languages-start-->
+    <div class="boxprogramming">
+        <h5 class="display-4 text-center">Languages & Frameworks</h5>
+        <div class="container">
+            <br>
+            <div class="row text-center">
+                <div class="col-sm-2"><i style="color:darkorange" class="fa fa-5x fa-html5"></i></div><br>
+                <div class="col-sm-2"><i style="color:rgb(41, 125, 194)" class="fa fa-5x fa-css3"></i></div><br>
+                <div class="col-sm-2"><i style="color:#ffdd01;" class="fab fa-5x fa-js"></i></div><br>
+                <div class="col-sm-2 text-center">
+                    <svg style="color:rgb(153, 0, 255)" xmlns="http://www.w3.org/2000/svg" height="70" class="d-block"
+                        viewBox="0 0 118 94" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                            fill="currentColor">
+                        </path>
+                    </svg>
+                </div><br>
+                <div class="col-sm-2"><i style="color:rgb(81, 158, 4)" class='fab fa-5x fa-node'></i></div><br>
+                <div class="col-sm-2"><i style="color:rgb(255, 41, 25)" class="fab fa-5x fa-npm"></i></div><br>
+            </div>
+            <br>
+        </div>
+    </div>
+    <!--todo programming languages-end-->
+    <!--todo description start-->
+    <div class="box-description">
+        <h3 class="display-4 text-center">What is OCR? <i class="fa fa-file-text"></i></h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="container">
+                        <img src="https://res.cloudinary.com/dnv3ztqf1/image/upload/q_34/v1593863465/smartometer/Untitled_design_geipcc.gif" width="100%" alt="">
+                    </div>
+                </div>
+                <div id="description-ocr-paragraph" class="col-md-8">
+                    <p class="text-justify">Optical character recognition or optical character reader (OCR) is the
+                        electronic or mechanical conversion of images of
+                        typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a
+                        photo of a document, a
+                        scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle
+                        text superimposed on an
+                        image (for example: from a television broadcast).</p>
+                    <p class="text-justify">Here for this project, we have used tesseract which is Google's open source
+                        engine
+                        for optical character recognition (OCR). I have made the back-end using Node.js using the
+                        following modules of node:<br>
+                    </p>
+                    <p>
+                        1) Tesseract Module<br>
+                        2) Express <br>
+                        3) FileSystem <br>
+                        4) Multer <br>
+                        5) Nodemon <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--todo description end-->
+    <!--todo footer-->
+    <div class="footer bg-light ">
+        <!--social-media-->
+        <div class="container ">
+            <br>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h4 class="display-5 text-center">About</h4>
+                    <p class="text-justify"> Hello, I am Aakash Yadav this is the project which I made
+                        during my B.E Computer Science (2019-23) degree for TECHNOVA project competition.
+                        I have many hopes with this project.
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                    <h4 class="display-5 text-center">Follow Me</h4>
+                    <div class="row text-center">
+                        <div class="col-sm-3">
+                            <a href="https://github.com/AakashCode12" target="_blank"><i id="github"
+                                    class="fa fa-3x fa-github" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://www.linkedin.com/in/aakash-yadav-a30627190/" target="_blank"><i
+                                    id="linkedin" class="fa fa-3x fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://www.instagram.com/aakash_igram/" target="_blank"><i id="instagram"
+                                    class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://twitter.com/Aakashv0007" target="_blank"><i id="twitter"
+                                    class="fa fa-3x fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="horizontal-line">
+            <hr>
+        </section>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: <i>Aakash Yadav</i></div>
+    </div>
+    <!--todo footer end-->
+    <!-- todo JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
