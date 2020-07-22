@@ -3,7 +3,7 @@
 
 #First Part Developing the front end
 
-#Second Part Developing the python backend 
+#Second Part Developing the node backend 
 
 #third part joining both ends
 
