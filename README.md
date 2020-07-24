@@ -11,5 +11,5 @@
 
 #fourth part using camera of our Arduino unit and transferring our image to website
 
-
+#I don't use python tesseract now ignore it
 
