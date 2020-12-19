@@ -1,17 +1,5 @@
+{% extends 'ocr/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-    <h1>HELLO WORLD</h1>
-    <a href="{% static 'ocr/requirements.txt' %}">Click Here</a>
-</body>
-
-</html>
+{% block CSSLINKS %}
+<link rel="stylesheet" href="{% static 'ocr/css/index.css' %}">
+{% endblock %}
